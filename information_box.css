@@ -1,0 +1,79 @@
+
+
+
+body {
+    background-color: rgb(175, 166, 166);
+   font-family: "Fira Sans", serif;
+    
+    font-weight: 100;
+    font-style: normal;
+}
+
+.part1 {
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "first second third";
+    gap: 1px;
+}
+.first {
+    grid-area: first;
+}
+.second {
+    grid-area: second;
+}
+.third {
+    grid-area: third;
+}
+
+.head {
+    width: 60%;
+    margin: 50px;
+    background-color: white;
+    border: 1px solid rgb(147, 147, 147);
+    border-radius: 8px;
+    box-shadow: rgb(181, 179, 179)  0px 0px 10px;
+}
+
+.part2 {
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-template-areas: 
+    "one two three";
+}
+.one {
+    grid-area: one;
+}
+.two {
+    grid-area: two;
+}
+.three {
+    grid-area: three;
+}
+
+
+.container {
+    margin-bottom: 10px;
+}
+.readMore {
+    background-color: rgb(105, 105, 254);
+    color: white;
+    font: bold;
+    font-weight: bolder;
+    border: 2px solid rgb(105, 105, 254);
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 2px;
+    text-shadow: gray 1px 1px 1px;
+}
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease;
+}
+.readMore:hover + .content {
+    max-height: 300px;
+}

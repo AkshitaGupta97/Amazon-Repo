@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        #surv {
+            text-align: center;
+            color: green;
+        }
+        .submit {
+            text-align: center;
+            background-color: green;
+            color: azure;
+            font-size: large;
+            width: 100%;
+
+        }
+        .div1 {
+            border: 5px solid green;
+            padding: 5px;
+            background-color: rgb(194, 244, 244);
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <div id="surv">
+            <h2><i>Survey Form</i></h2>
+       </div>        
+        <form action="" target="_blank">
+            <label for="name"><b>Name</b></label>
+            <br>
+            <input type="text" placeholder="Enter name" name="user name" id="name">
+            <br>
+            <br>
+            <label for="email"><b>Email</b></label>
+            <br>
+            <input type="email" placeholder="Enter email" name="user email" id="email">
+            <br>
+            <br>
+            <label for="age"><b>Age</b></label>
+            <br>
+            <input type="number" placeholder="Enter age" name="user age" id="age">
+            <br>
+            <br>
+            <label for="option"><b>Which best option describes you? </b></label>
+            <br>
+            <input type="text" placeholder="Intern / Student / Working Profrssional" name="user option" id="option">
+            <br>
+            <br>
+            <label for="check"><b>Would you recommend <i>chat gpt</i> as a friend? </b></label>
+            <br>
+            <input type="radio" name="user ans" id="check"> <i>Yes</i>
+            <br>
+            <input type="radio" name="user ans" id="check"> <i>No</i>
+            <br>
+            <input type="radio" name="user ans" id="check"> <i>Maybe</i>
+            <br>
+            <br>
+            <label for="lang"><b>Languages and Framework you may know? (Check all if you know?)</b></label>
+            <br>
+            <input type="checkbox" name="user lang" id="lang"> <i>C</i>
+            <br>
+            <input type="checkbox" name="user lang" id="lang"> <i>C++</i>
+            <br>
+            <input type="checkbox" name="user lang" id="lang"> <i>C#</i>
+            <br>
+            <input type="checkbox" name="user lang" id="lang"> <i>Java</i>
+            <br>
+            <input type="checkbox" name="user lang" id="lang"> <i>Python</i>
+            <br>
+            <input type="checkbox" name="user lang" id="lang"> <i>JavaScript</i>
+            <br>
+            <input type="checkbox" name="user lang" id="lang"> <i>React</i>
+            <br>
+            <input type="checkbox" name="user lang" id="lang"> <i>Angular</i>
+            <br>
+            <input type="checkbox" name="user lang" id="lang"> <i>Django</i>
+            <br>
+            <input type="checkbox" name="user lang" id="lang"> <i>Spring</i>
+            <br>
+            <br>
+            <label for="info"><b>Any comment or suggestion</b></label>
+            <br>
+            <input type="text" placeholder="Please give your Feedback" name="user info" id="info">
+            <br>
+            <br>
+    
+            <input class="submit" type="submit" name="user submit" id="submission">
+       </form>
+    </div>
+</body>
+</html>

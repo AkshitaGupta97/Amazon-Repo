@@ -1,0 +1,17 @@
+.acc-item {
+    margin-bottom: 10px;
+}
+.acc-header {
+    background-color: rgb(130, 129, 129);
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.acc-contnet {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease;
+}
+.acc-header:hover +.acc-contnet {
+    max-height: 100px;
+}

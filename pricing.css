@@ -1,0 +1,89 @@
+
+html {
+    font: caption;
+}
+
+.container {
+    display: grid;
+    width: 1200px;
+    height: 500px;
+    background-color: rgb(232, 219, 245);
+    border: 2px solid rgb(250, 246, 246);
+    padding-left: 48px;
+    padding-top: 32px;
+    padding-right: 48px;
+    padding-bottom: 32px;
+    gap: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    grid-template-areas: 
+    "free basic pro";
+}
+
+
+
+.subs {
+    text-align: center;
+    width: 150px;
+    height: 30px;
+    font-size: large;
+    border-radius: 25px;
+    color: wheat;
+    background-color: rgb(1, 1, 28);
+}
+
+.subswhite {
+    text-align: center;
+    width: 150px;
+    height: 30px;
+    font-size: large;
+    border-radius: 25px;
+    color: rgb(13, 2, 44);
+    background-color: rgb(244, 244, 249);
+}
+
+.free {
+    background-color: #fff;
+    border: 5px solid rgb(209, 207, 207);
+    width: 263px;
+    height: 361;
+    padding: 32px;
+    gap: 32px;
+    border-radius: 12px;
+    font-size: large;
+    grid-area: free;
+    box-shadow: 0px 0px  2px 2px rgb(142, 141, 141);
+}
+
+.basic {
+    background-color: #0f0129;
+    color: white;
+    border: 5px solid rgb(228, 215, 215);
+    width: 262px;
+    height: 363;
+    padding: 32px;
+    gap: 32px;
+    border-radius: 12px;
+    grid-area: basic;
+    font-size: large;
+}
+
+.newsub {
+    text-align: center;
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    color: rgb(13, 2, 44);
+    background-color: rgb(221, 221, 225);
+}
+
+.pro {
+    grid-area: pro;
+    background-color: white;
+    border: 5px solid  rgb(209, 207, 207);
+    width: 263px;
+    height: 361;
+    padding: 32px;
+    gap: 32px;
+    border-radius: 12px;
+    font-size: large;
+}
