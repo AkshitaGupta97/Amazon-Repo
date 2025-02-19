@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario</title>
+
+    <style> 
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            width: 100%;
+            height: 100vh;
+            background-image: url('https://th.bing.com/th/id/OIP.oPuwTqojRT95r6udoCJVCAHaEo?rs=1&pid=ImgDetMain');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        .image {
+            width: 400px;
+            /*aspect-ratio: 1;*/
+            height: 200px;
+            position: absolute;
+            bottom: 0%;
+            background-image: none;
+            animation: mario 5s linear infinite;
+            animation-direction: alternate;
+        }
+        @keyframes mario {
+            0% {
+                translate: 0%;
+            }
+            100% {
+                translate: calc(90vw - 100px);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <img class="image" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/457fe2ae-23dd-4459-b703-2d1404bac6ad/dfzzdt1-21d8812f-c0c7-4df5-b36a-fee9d88a0a77.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzQ1N2ZlMmFlLTIzZGQtNDQ1OS1iNzAzLTJkMTQwNGJhYzZhZFwvZGZ6emR0MS0yMWQ4ODEyZi1jMGM3LTRkZjUtYjM2YS1mZWU5ZDg4YTBhNzcuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.xVbRCIhFGArRr7XSn8oTQtf4FNI8iJQffpTphvg3shw" alt="">
+</body>
+</html>
